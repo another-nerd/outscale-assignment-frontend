@@ -8,7 +8,7 @@ function chunkFileUpload(file, serverUrl, chunkSize) {
         const chunk = file.slice(start, end);
 
         // Creating a new XMLHttpRequest for every chunk (bad practice)
-        var xhr = new XMLHttpRequest();
+const xhr = new XMLHttpRequest();
 
         // Opening a new connection every time inside the loop (also not great)
         xhr.open("POST", serverUrl, true);
